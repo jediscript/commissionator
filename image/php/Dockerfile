@@ -10,8 +10,6 @@ RUN apt-get update && apt-get install -y \
         && pecl install memcached redis \
         && pecl install xdebug \
         && docker-php-ext-install mbstring tokenizer \
-        && docker-php-ext-enable memcached redis \
-
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+        && docker-php-ext-enable memcached redis
 
 WORKDIR /var/www
