@@ -8,3 +8,9 @@
 6. Navigate to app directory by running ```cd /var/www/html```
 7. Run ```composer install```
 8. Run ```php script.php input.csv```
+
+
+## How to run tests
+1. Connect to PHP Docker service by running ```docker-compose exec php /bin/sh```
+2. Navigate to app directory by running ```cd /var/www/html```
+3. Run ```composer test```
